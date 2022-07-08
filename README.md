@@ -1,7 +1,5 @@
 # powershell
 Some simple scripts
 
-vm_recon.ps1 
-# Wify 
-# Virtualbox  
-Fixing the network issue with network reconection
+# Wify # Virtualbox  
+vm_recon.ps1  - This script partualy pretend to fix issue with VirtualBox which happened after Wifi reconnect.
