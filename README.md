@@ -10,8 +10,9 @@ Fixes VirtualBox network issues after WiFi reconnect.
 
 * Checks VM connectivity
 * Switches bridged adapter
+* Handles multiple network interfaces (different providers)
 * Restarts VMs if needed
-
+  
 ### 📁 file_parser_by_content.ps1
 
 Processes files based on CSV input.
