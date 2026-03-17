@@ -1,15 +1,40 @@
-# powershell
-Several simple scripts
+# PowerShell Scripts Collection
 
-#WiFi #VirtualBox #DroppedConnection
-  - vm_recon.ps1 - This script attempts to recover a VirtualBox VM network connection after the        host reconnects to Wi-Fi. It checks whether the VM is reachable, switches the bridged adapter if    needed, and, if that does not help, power-cycles running VMs as a workaround for VirtualBox         networking issues.
+A set of simple but practical PowerShell scripts for automation and troubleshooting.
 
-#FileManagement #CSV #PowerShell
+## 📂 Scripts
 
-  - file_parcer_by_content.ps1 - This script processes a CSV file with 2 columns:
-    1. file name;
-    2. destination folder;
-  
-  For each row, it checks whether the file exists in the current folder.
-  If the file exists, it creates the target folder.
-  If the file does not exist, the row is written to a skipped-lines log file for manual review.
+### 🔧 vm_recon.ps1
+
+Fixes VirtualBox network issues after WiFi reconnect.
+
+* Checks VM connectivity
+* Switches bridged adapter
+* Restarts VMs if needed
+
+### 📁 file_parser_by_content.ps1
+
+Processes files based on CSV input.
+
+* Input: CSV with file name + destination folder
+* Creates directories automatically
+* Logs skipped files
+
+## 🚀 Usage
+
+Run scripts in PowerShell:
+
+```powershell
+.\vm_recon.ps1
+.\file_parser_by_content.ps1
+```
+
+## 🛠 Requirements
+
+* Windows
+* PowerShell 5+
+* VirtualBox (for vm_recon.ps1)
+
+## 📌 Notes
+
+These scripts are experimental but useful for everyday automation.
